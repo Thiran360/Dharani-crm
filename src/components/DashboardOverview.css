@@ -1,0 +1,317 @@
+/* Premium Enterprise Dashboard Overview Styles */
+.dash-overview-container {
+  animation: slideInUp 0.5s ease forwards;
+  color: #000000;
+}
+
+.overview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+
+.overview-filters {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.2s;
+  backdrop-filter: blur(4px);
+}
+
+.filter-btn:hover {
+  background: white;
+  color: #000000;
+}
+
+.filter-btn.active {
+  background: var(--color-ivory);
+  color: #000000;
+  border-color: var(--color-terracotta);
+  box-shadow: 0 2px 8px rgba(48, 55, 42, 0.12);
+}
+
+.premium-bento {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.premium-metric-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(48, 55, 42, 0.12);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.premium-metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.metric-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.metric-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.metric-icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.icon-blue { background: rgba(48, 55, 42, 0.06); color: #000000; }
+.icon-green { background: rgba(48, 55, 42, 0.08); color: #000000; }
+.icon-purple { background: rgba(179, 197, 138, 0.15); color: #000000; }
+.icon-orange { background: var(--color-gold-muted); color: #000000; }
+
+.metric-value-large {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.1;
+  font-family: var(--font-number, 'Plus Jakarta Sans', 'Inter', 'DM Sans', sans-serif);
+  font-variant-numeric: tabular-nums lining-nums;
+  letter-spacing: -0.02em;
+}
+
+.metric-trend-row {
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 500;
+  font-family: var(--font-number, 'Inter', 'DM Sans', sans-serif);
+}
+
+.trend-up { color: #000000; }
+.trend-down { color: #000000; }
+.trend-flat { color: #000000; }
+
+.premium-bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+}
+
+.premium-panel {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid rgba(48, 55, 42, 0.12);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-head {
+  padding: 1.5rem 1.5rem 1rem;
+  border-bottom: 1px solid #F5F7EC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-head h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+}
+
+.panel-body {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+/* Premium Leaderboard */
+.leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.leaderboard-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem;
+  border-radius: 12px;
+  background: #F5F7EC;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.leaderboard-item:hover {
+  background: white;
+  border-color: rgba(48, 55, 42, 0.12);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.lb-rank {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #000000;
+  width: 20px;
+  text-align: center;
+}
+
+.lb-rank.top-1 { color: #000000; font-size: 1.1rem; }
+.lb-rank.top-2 { color: #000000; font-size: 1rem; }
+.lb-rank.top-3 { color: #000000; font-size: 1rem; }
+
+.lb-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(48, 55, 42, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+.lb-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.lb-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.lb-sub {
+  font-size: 0.75rem;
+  color: #000000;
+}
+
+.lb-amount {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* Premium Chart CSS */
+.professional-chart {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1rem 0;
+  position: relative;
+  background-image: 
+    linear-gradient(to bottom, #F5F7EC 1px, transparent 1px),
+    linear-gradient(to bottom, #F5F7EC 1px, transparent 1px),
+    linear-gradient(to bottom, #F5F7EC 1px, transparent 1px),
+    linear-gradient(to bottom, #F5F7EC 1px, transparent 1px);
+  background-size: 100% 25%;
+}
+
+.chart-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 0.5rem;
+  position: relative;
+  group: hover;
+}
+
+.chart-bar-group {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4px;
+}
+
+.chart-bar {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.chart-bar.sales { background: #B3C58A; }
+.chart-bar.orders { background: #B3C58A; }
+
+.chart-column:hover .chart-bar {
+  filter: brightness(1.1);
+}
+
+.chart-tooltip {
+  position: absolute;
+  top: -40px;
+  background: #B3C58A;
+  color: #000000;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, top 0.2s;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.chart-column:hover .chart-tooltip {
+  opacity: 1;
+  top: -45px;
+}
+
+.chart-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+@media (max-width: 1100px) {
+  .premium-bento { grid-template-columns: repeat(2, 1fr); }
+  .premium-bottom-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .premium-bento { grid-template-columns: 1fr; }
+  .overview-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+}

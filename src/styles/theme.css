@@ -1,0 +1,601 @@
+/* ═══════════════════════════════════════════════════════════════
+   Dharani Herbals CRM — Unified Light Botanical Green
+   ONE primary color: #B3C58A · Light · Soft · Consistent
+   ═══════════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+:root {
+  /* ── Single brand color ── */
+  --color-primary: #B3C58A;
+  --color-botanical: #B3C58A;
+  --color-botanical-dark: #B3C58A;
+  --color-botanical-accent: #B3C58A;
+  --color-botanical-light: #B3C58A;
+  --color-botanical-muted: rgba(179, 197, 138, 0.2);
+  --color-botanical-subtle: rgba(179, 197, 138, 0.1);
+  --color-botanical-focus: rgba(179, 197, 138, 0.28);
+
+  --color-bg-light: #F5F7EC;
+  --color-cream: #FAF9F1;
+  --color-cream-dark: #EDEAE0;
+  --color-border-soft: #D9DFC5;
+
+  --color-brown: #000000;
+  --color-brown-mid: #000000;
+  --color-brown-muted: #000000;
+  --color-brown-light: #000000;
+
+  --color-white: #FFFFFF;
+
+  --color-ivory: var(--color-bg-light);
+  --color-gold: var(--color-primary);
+  --color-gold-muted: var(--color-botanical-subtle);
+
+  --bg-primary: var(--color-bg-light);
+  --bg-secondary: var(--color-cream);
+  --bg-card: var(--color-cream);
+  --bg-surface: var(--color-white);
+  --bg-input: var(--color-white);
+  --bg-sidebar: var(--color-primary);
+  --bg-hover: rgba(179, 197, 138, 0.08);
+
+  --text-primary: var(--color-brown);
+  --text-secondary: var(--color-brown-mid);
+  --text-muted: var(--color-brown-muted);
+  --text-placeholder: var(--color-brown-light);
+  --text-on-primary: var(--color-brown);
+  --text-on-sidebar: var(--color-brown);
+  --text-on-sidebar-muted: var(--color-brown-muted);
+
+  --border-color: var(--color-border-soft);
+  --border-light: rgba(217, 223, 197, 0.55);
+  --border-focus: var(--color-primary);
+  --border-gold: rgba(179, 197, 138, 0.45);
+
+  --primary: var(--color-primary);
+  --primary-light: var(--color-primary);
+  --primary-dark: var(--color-primary);
+  --accent: var(--color-primary);
+
+  /* Legacy aliases → same primary */
+  --color-orange: var(--color-primary);
+  --color-orange-dark: var(--color-primary);
+  --color-orange-light: var(--color-primary);
+  --color-orange-muted: var(--color-botanical-muted);
+  --color-orange-subtle: var(--color-botanical-subtle);
+  --color-orange-focus: var(--color-botanical-focus);
+  --color-navy: var(--color-primary);
+  --color-navy-dark: var(--color-primary);
+  --color-navy-light: var(--color-primary);
+  --color-navy-muted: var(--color-botanical-muted);
+  --color-navy-subtle: var(--color-botanical-subtle);
+  --color-navy-focus: var(--color-botanical-focus);
+  --color-rose: var(--color-primary);
+  --color-rose-dark: var(--color-primary);
+  --color-rose-light: var(--color-primary);
+  --color-rose-muted: var(--color-botanical-muted);
+  --color-rose-subtle: var(--color-botanical-subtle);
+  --color-rose-focus: var(--color-botanical-focus);
+  --color-terracotta: var(--color-primary);
+  --color-terracotta-dark: var(--color-primary);
+  --color-terracotta-light: var(--color-primary);
+  --color-terracotta-muted: var(--color-botanical-muted);
+  --color-sand: var(--color-bg-light);
+  --color-sand-dark: var(--color-cream);
+  --color-sand-light: var(--color-cream);
+  --color-offwhite: var(--color-cream);
+  --color-beige: var(--color-cream);
+  --color-beige-dark: var(--color-cream-dark);
+  --color-beige-light: var(--color-cream);
+  --primary-green: var(--color-primary);
+  --dark-green: var(--color-primary);
+  --light-green: var(--color-botanical-muted);
+  --bg-color: var(--color-bg-light);
+  --text-dark: var(--color-brown);
+  --text-light: var(--color-brown-muted);
+  --color-card: var(--color-cream);
+
+  --color-success: var(--color-primary);
+  --color-success-bg: var(--color-botanical-subtle);
+  --color-error: #000000;
+  --color-error-bg: rgba(48, 55, 42, 0.06);
+  --color-warning: var(--color-primary);
+  --color-warning-bg: var(--color-botanical-muted);
+  --color-info: #000000;
+  --color-info-bg: var(--color-botanical-subtle);
+
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+
+  --shadow-sm: 0 1px 4px rgba(48, 55, 42, 0.04);
+  --shadow-md: 0 4px 14px rgba(48, 55, 42, 0.06);
+  --shadow-lg: 0 10px 28px rgba(48, 55, 42, 0.07);
+  --shadow-primary: 0 4px 14px rgba(179, 197, 138, 0.35);
+
+  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body: 'DM Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-number: 'Plus Jakarta Sans', 'Inter', 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--bg-primary);
+  color: #000000;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.55;
+}
+
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; border: none; outline: none; font-family: inherit; }
+
+h1, h2, h3, .page-title, .brand-dharani, .brand-herbals, .ultra-title {
+  font-family: var(--font-display);
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* ── Number, Price & Metric Typography ── */
+.metric-value,
+.metric-value-large,
+.txn-amount-large,
+.price,
+.amount,
+.number-font,
+.numeric,
+.stat-value,
+.metric-trend-row,
+.metric-trend,
+.total-amount,
+.price-tag,
+.badge,
+.notification-badge,
+.table-price,
+.cost,
+.mrp,
+.customer-price,
+.gst-percentage,
+.order-id,
+.order-total,
+.count,
+.quantity,
+.stock-badge,
+.subtotal,
+.grand-total,
+.tax-amount,
+.shipping-amount {
+  font-family: var(--font-number) !important;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* ── Table headers ── */
+.cat-table th,
+.product-table th,
+.order-table th,
+.brand-table th,
+.cust-table th,
+.txn-table th,
+.transaction-table th,
+.slider-table th,
+.shipping-table th,
+.review-table th,
+.ecom-table th,
+.report-table th {
+  background: var(--color-primary) !important;
+  color: #000000 !important;
+}
+
+/* ── Primary buttons ── */
+.dash-btn, .ultra-btn, .cat-add-btn, .product-add-btn, .brand-add-btn,
+.cust-add-btn, .txn-add-btn, .slider-add-btn, .shipping-add-btn,
+.review-add-btn, .ecom-add-btn, .orders-report-submit, .om-btn-primary, .oe-btn-save {
+  background: var(--color-primary) !important;
+  color: #000000 !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-primary) !important;
+}
+
+.dash-btn:hover:not(:disabled), .ultra-btn:hover, .cat-add-btn:hover,
+.product-add-btn:hover, .brand-add-btn:hover, .cust-add-btn:hover,
+.txn-add-btn:hover, .slider-add-btn:hover, .shipping-add-btn:hover,
+.review-add-btn:hover, .ecom-add-btn:hover, .orders-report-submit:hover,
+.om-btn-primary:hover, .oe-btn-save:hover {
+  filter: brightness(0.94) !important;
+  box-shadow: 0 6px 16px rgba(179, 197, 138, 0.4) !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 0 0 3px var(--color-botanical-focus) !important;
+}
+
+.menu-icon-accent {
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-icon-accent--botanical, .menu-icon-accent--orange,
+.menu-icon-accent--navy, .menu-icon-accent--rose, .menu-icon-accent--terracotta,
+.menu-icon-accent--gold, .menu-icon-accent--beige, .menu-icon-accent--brown {
+  color: #000000;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.icon-green, .icon-blue, .icon-purple, .icon-orange, .icon-gold {
+  background: var(--color-botanical-muted) !important;
+  color: #000000 !important;
+}
+
+.chart-bar.sales,
+.chart-bar.orders {
+  background: var(--color-primary) !important;
+  opacity: 0.85;
+}
+
+.trend-up, .trend.positive, .trend-positive { color: #000000 !important; }
+.trend-down, .trend.negative, .trend-negative { color: #000000 !important; }
+.trend-flat, .trend.neutral, .trend-neutral { color: #000000 !important; }
+
+.agg-green {
+  background: var(--color-primary) !important;
+  border: none !important;
+  color: #000000 !important;
+}
+
+.agg-card {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.card-green, .primary-card {
+  background: var(--color-primary) !important;
+  color: #000000 !important;
+  border: none !important;
+  border-radius: var(--radius-lg) !important;
+}
+
+.card-green .metric-info h3, .primary-card .metric-info h3 {
+  color: #000000 !important;
+}
+
+.primary-card .trend.positive { color: #000000 !important; }
+
+.action-btn-green {
+  background: var(--color-botanical-muted) !important;
+  color: #000000 !important;
+}
+
+.action-btn-green:hover {
+  background: var(--color-primary) !important;
+  color: #000000 !important;
+}
+
+.spinner, .loading-spinner {
+  border-color: var(--color-border-soft) !important;
+  border-top-color: var(--color-primary) !important;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg-light); }
+::-webkit-scrollbar-thumb { background: var(--color-border-soft); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-primary); }
+
+/* ── Sidebar ── */
+.ultra-sidebar {
+  background: var(--color-primary) !important;
+  border: 1px solid rgba(48, 55, 42, 0.08) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.ultra-sidebar .brand-dharani,
+.ultra-sidebar .brand-herbals { color: #000000 !important; }
+.ultra-sidebar .menu-item { color: #000000 !important; }
+
+.ultra-sidebar .menu-item:hover {
+  background: rgba(255, 255, 255, 0.28) !important;
+  color: #000000 !important;
+}
+
+.ultra-sidebar .menu-item.active {
+  background: rgba(255, 255, 255, 0.38) !important;
+  color: #000000 !important;
+  box-shadow: inset 3px 0 0 var(--color-brown) !important;
+}
+
+.ultra-sidebar .menu-icon { color: #000000 !important; }
+.ultra-sidebar .menu-item:hover .menu-icon,
+.ultra-sidebar .menu-item.active .menu-icon { color: #000000 !important; }
+
+.ultra-sidebar .upgrade-card {
+  background: rgba(255, 255, 255, 0.32) !important;
+  border-top: 1px solid rgba(48, 55, 42, 0.1) !important;
+}
+
+.ultra-sidebar .upgrade-card h3 { color: #000000 !important; }
+.ultra-sidebar .upgrade-card p { color: #000000 !important; }
+
+.ultra-sidebar .upgrade-btn {
+  background: var(--color-white) !important;
+  color: #000000 !important;
+}
+
+.ultra-sidebar .upgrade-btn:hover {
+  background: var(--color-cream) !important;
+  filter: brightness(0.98);
+}
+
+/* ── Header ── */
+.ultra-header {
+  background: var(--color-white) !important;
+  border: 1px solid var(--border-color) !important;
+  color: #000000 !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.ultra-header .header-search {
+  background: var(--color-bg-light) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.ultra-header .header-search input { color: #000000 !important; }
+.ultra-header .header-search input::placeholder { color: #000000 !important; }
+.ultra-header .search-icon { color: #000000 !important; }
+
+.ultra-header .icon-btn {
+  background: var(--color-bg-light) !important;
+  color: #000000 !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: none !important;
+}
+
+.ultra-header .user-name { color: #000000 !important; }
+.ultra-header .user-role { color: #000000 !important; }
+.ultra-header .avatar {
+  background: var(--color-primary) !important;
+  color: #000000 !important;
+}
+.ultra-header .hamburger-btn { color: #000000 !important; }
+.ultra-header .badge {
+  background: var(--color-primary) !important;
+  box-shadow: 0 0 0 2px var(--color-white) !important;
+}
+.ultra-header .header-search:focus-within {
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 0 0 3px var(--color-botanical-focus) !important;
+}
+.ultra-header .user-profile:hover { background: var(--color-bg-light) !important; }
+
+/* ═══════════════════════════════════════════════════════════════
+   UNIFIED TABLE ACTION BUTTONS (Edit & Red Trash)
+   ═══════════════════════════════════════════════════════════════ */
+.prod-action-btn,
+.cat-action-btn,
+.brand-action-btn,
+.cust-action-btn,
+.slider-action-btn,
+.storemember-action-btn,
+.action-btn.edit,
+.action-btn-green,
+.action-btn-yellow {
+  background: rgba(179, 197, 138, 0.25) !important;
+  color: #2D3A18 !important;
+  border: 1px solid rgba(179, 197, 138, 0.5) !important;
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 8px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  font-size: 1.05rem !important;
+  box-shadow: 0 2px 6px rgba(48, 55, 42, 0.05) !important;
+}
+
+.prod-action-btn:hover,
+.cat-action-btn:hover,
+.brand-action-btn:hover,
+.cust-action-btn:hover,
+.slider-action-btn:hover,
+.storemember-action-btn:hover,
+.action-btn.edit:hover,
+.action-btn-green:hover {
+  background: var(--color-primary, #B3C58A) !important;
+  color: #000000 !important;
+  border-color: var(--color-primary, #B3C58A) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(179, 197, 138, 0.45) !important;
+}
+
+/* Red Trash / Delete Buttons */
+.prod-action-btn.delete,
+.cat-action-btn.delete,
+.brand-action-btn.delete,
+.cust-action-btn.delete,
+.slider-action-btn.delete,
+.storemember-action-btn.delete,
+.action-btn.delete,
+.action-btn-red,
+.btn-delete,
+.btn-reject {
+  background: rgba(239, 68, 68, 0.12) !important;
+  color: #DC2626 !important;
+  border: 1px solid rgba(239, 68, 68, 0.35) !important;
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 8px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  font-size: 1.05rem !important;
+  box-shadow: 0 2px 6px rgba(220, 38, 38, 0.1) !important;
+}
+
+.prod-action-btn.delete:hover,
+.cat-action-btn.delete:hover,
+.brand-action-btn.delete:hover,
+.cust-action-btn.delete:hover,
+.slider-action-btn.delete:hover,
+.storemember-action-btn.delete:hover,
+.action-btn.delete:hover,
+.action-btn-red:hover,
+.btn-delete:hover,
+.btn-reject:hover {
+  background: #DC2626 !important;
+  color: #FFFFFF !important;
+  border-color: #DC2626 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.4) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   GLOBAL MOBILE RESPONSIVE OVERRIDES (<= 768px)
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* Toolbars & Header Actions Stack Gracefully */
+  .product-header-bar,
+  .cat-header-bar,
+  .brand-header-bar,
+  .customer-header-bar,
+  .order-header-bar,
+  .storemember-header-bar,
+  .ecomuser-header-bar,
+  .shipping-rates-header {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    gap: 0.85rem !important;
+  }
+
+  .product-toolbar,
+  .cat-toolbar,
+  .brand-toolbar,
+  .customer-toolbar,
+  .order-toolbar,
+  .storemember-toolbar,
+  .ecomuser-toolbar,
+  .shipping-header-actions {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    gap: 0.75rem !important;
+  }
+
+  /* Search Boxes Expand Full Width */
+  .product-search,
+  .cat-search,
+  .brand-search,
+  .customer-search,
+  .order-search,
+  .ecomuser-search,
+  .shipping-search-box {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .product-search input,
+  .cat-search input,
+  .brand-search input,
+  .customer-search input,
+  .order-search input,
+  .ecomuser-search input,
+  .shipping-search-box input {
+    width: 100% !important;
+  }
+
+  /* Export & Add Buttons Expand Comfortably */
+  .prod-export-btn, .prod-add-btn,
+  .cat-export-btn, .cat-add-btn,
+  .brand-export-btn, .brand-add-btn,
+  .cust-export-btn, .cust-add-btn,
+  .order-export-btn,
+  .storemember-add-btn,
+  .ecomuser-add-btn,
+  .btn-add-shipping {
+    width: 100% !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    padding: 0.7rem 1rem !important;
+  }
+
+  /* Table Containers Horizontal Touch Scroll */
+  .table-responsive,
+  .product-table-container,
+  .cat-table-container,
+  .brand-table-container,
+  .customer-table-container,
+  .order-table-container,
+  .storemember-table-container,
+  .ecomuser-table-container {
+    width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+  }
+
+  /* Modal Dialog Responsive Fixes */
+  .cat-modal,
+  .shipping-modal,
+  .ecomuser-modal,
+  .confirm-modal-box {
+    width: calc(100vw - 2rem) !important;
+    max-width: 100% !important;
+    padding: 1.25rem !important;
+    max-height: 90vh !important;
+    overflow-y: auto !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   PREVENT EMAIL OVERFLOW IN TABLES (GLOBAL RULE)
+   ═══════════════════════════════════════════════════════════════ */
+.cust-table-email,
+.storemember-table-email,
+.cust-table-email span,
+.ecomuser-table td:nth-child(4),
+table td[class*="email"],
+.cust-table-name span {
+  word-break: break-all !important;
+  overflow-wrap: anywhere !important;
+  max-width: 220px !important;
+  display: inline-block !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  vertical-align: middle !important;
+}
+
+@media (max-width: 768px) {
+  .cust-table-email,
+  .storemember-table-email,
+  table td[class*="email"],
+  .cust-table-name span {
+    max-width: 160px !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   PREVENT LINE BREAKS ON CURRENCY & TABLE HEADERS (GLOBAL RULE)
+   ═══════════════════════════════════════════════════════════════ */
+table th,
+table td,
+.price-badge,
+.amount,
+.price,
+.txn-amount-large {
+  white-space: nowrap !important;
+}

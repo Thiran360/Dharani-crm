@@ -1,0 +1,110 @@
+﻿{
+    "value":  [
+                  {
+                      "order_id":  3,
+                      "customer":  "Sri Raj",
+                      "customer_role":  "customer",
+                      "mobile":  "9025698227",
+                      "status":  "pending",
+                      "product_amount":  "140.00",
+                      "cgst":  "7.00",
+                      "sgst":  "7.00",
+                      "igst":  "0.00",
+                      "tax_total":  "7.00",
+                      "shipping_charges":  "50.00",
+                      "total_amount":  "197.00",
+                      "tracking_number":  "",
+                      "address":  {
+                                      "full_name":  "Sri Raj",
+                                      "phone":  "9025698227",
+                                      "address":  "Erode - Perunthurai - Kangayam Road, Palayapalayam, Erode, Tamil Nadu, 638001, India",
+                                      "city":  "Erode",
+                                      "state":  "Tamil Nadu",
+                                      "pincode":  "638001"
+                                  },
+                      "estimated_delivery":  "",
+                      "items":  [
+                                    {
+                                        "product":  "Hibiscus Shampoo",
+                                        "variation_id":  25,
+                                        "variation_name":  "250 ML",
+                                        "quantity":  1,
+                                        "price":  "140.00",
+                                        "product_image":  "https://vedanmart.com/images/hair/hibiscuss.jpg"
+                                    }
+                                ],
+                      "created_at":  "2026-07-03T19:53:13.141821+00:00"
+                  },
+                  {
+                      "order_id":  2,
+                      "customer":  "Sri Raj",
+                      "customer_role":  "customer",
+                      "mobile":  "9025698227",
+                      "status":  "pending",
+                      "product_amount":  "120.00",
+                      "cgst":  "6.00",
+                      "sgst":  "6.00",
+                      "igst":  "0.00",
+                      "tax_total":  "6.00",
+                      "shipping_charges":  "50.00",
+                      "total_amount":  "176.00",
+                      "tracking_number":  "",
+                      "address":  {
+                                      "full_name":  "Sri Raj",
+                                      "phone":  "9025698227",
+                                      "address":  "Erode - Perunthurai - Kangayam Road, Palayapalayam, Erode, Tamil Nadu, 638001, India",
+                                      "city":  "Erode",
+                                      "state":  "Tamil Nadu",
+                                      "pincode":  "638001"
+                                  },
+                      "estimated_delivery":  "",
+                      "items":  [
+                                    {
+                                        "product":  "Nalangu Powder Jar",
+                                        "variation_id":  null,
+                                        "variation_name":  null,
+                                        "quantity":  2,
+                                        "price":  "60.00",
+                                        "product_image":  "https://vedanmart.com/images/Baby/NALANGU%20POWDER%20JAR.jpg"
+                                    }
+                                ],
+                      "created_at":  "2026-07-03T18:09:33.272399+00:00"
+                  },
+                  {
+                      "order_id":  1,
+                      "customer":  "Sri Raj",
+                      "customer_role":  "customer",
+                      "mobile":  "9025698227",
+                      "status":  "pending",
+                      "product_amount":  "60.00",
+                      "cgst":  "0.00",
+                      "sgst":  "0.00",
+                      "igst":  "3.00",
+                      "tax_total":  "3.00",
+                      "shipping_charges":  "0.00",
+                      "total_amount":  "63.00",
+                      "tracking_number":  "",
+                      "address":  {
+                                      "full_name":  "",
+                                      "phone":  "",
+                                      "address":  "",
+                                      "city":  "",
+                                      "state":  "",
+                                      "pincode":  ""
+                                  },
+                      "estimated_delivery":  "",
+                      "items":  [
+                                    {
+                                        "product":  "Nalangu Powder Jar",
+                                        "variation_id":  null,
+                                        "variation_name":  null,
+                                        "quantity":  1,
+                                        "price":  "60.00",
+                                        "product_image":  "https://vedanmart.com/images/Baby/NALANGU%20POWDER%20JAR.jpg"
+                                    }
+                                ],
+                      "created_at":  "2026-07-03T18:03:25.522628+00:00"
+                  }
+              ],
+    "Count":  3
+}
